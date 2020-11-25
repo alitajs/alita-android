@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         AlitaAgent.getWebView().loadUrl("file:///android_asset/www/index.html");
         Intent intent = new Intent(this, MicroAppActivity.class);
         intent.putExtra("needTopbar", false);
+        intent.putExtra("userData", "{}");
         startActivity(intent);
         finish();
     }
